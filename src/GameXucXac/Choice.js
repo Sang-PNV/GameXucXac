@@ -6,9 +6,9 @@ import { connect } from 'react-redux'
     let {choice} = this.props
     return (
       <div className='display-4'>
-         <p>Bạn chọn : <span className='text-primary'>{choice.banChon}</span></p>
-         <p>Số bàn thắng : <span className='text-info'>{choice.soBanThang}</span></p>
-         <p>Tổng số bàn chơi : <span className='text-success'>{choice.tongSoBanChoi}</span></p>
+         <p>Bạn chọn : <span className='text-danger'>{choice.banChon}</span></p>
+         <p>Tổng số bàn chơi : <span className='text-warning'>{choice.tongSoBanChoi}</span></p>
+         <p>Số bàn thắng : <span className='text-primary'>{choice.soBanThang}</span></p>
       </div>
       
     )

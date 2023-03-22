@@ -1,4 +1,4 @@
-import { PLAY, TAI, XIU } from "./constant/xucXacConstant"
+import { PLAY, RESTART, TAI, XIU } from "./constant/xucXacConstant"
 
 const initialState = {
 xiNgau :  [
@@ -53,7 +53,16 @@ export default (state = initialState, action) => {
 
   
     return {...state,xiNgau : mangXucXacNgauNhien, result : result, taiXiu: taiXiu, tongSoBanChoi: state.tongSoBanChoi +1, }
-   }}
+   }
+  }
+
+  case RESTART : {
+    return {...state,banChon : "", soBanThang : 0, tongSoBanChoi: 0, result: 6, taiXiu: "Xĩu",xiNgau :  [
+      {ma:1, url : "./GameImg/1.png"},
+      {ma:2, url : "./GameImg/2.png"},
+      {ma:3, url : "./GameImg/3.png"},
+]}
+  }
   default:
     return state
   }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import Choice from './Choice'
-import { PLAY, TAI, XIU } from './redux/constant/xucXacConstant'
+import { PLAY, RESTART, TAI, XIU } from './redux/constant/xucXacConstant'
 import Result from './Result'
 import XucXac from './XucXac'
 import './XucXac.css'
@@ -28,6 +28,8 @@ import './XucXac.css'
         <div className='text-center'>
             <Choice/>
             <button onClick={this.props.playGame} className='btnPlayGame btn btn-success'>Play Game</button>
+            <br />
+            <button onClick={this.props.restart} className='btnPlayGame mt-3 btn btn-danger'>Restart</button>
             <Result/>
         </div>
     </div>
@@ -53,6 +55,12 @@ let mapDispatchToProps = (dispatch) => {
         playGame: () =>{
             let action = {
                 type : PLAY,
+            }
+            dispatch(action)
+        },
+        restart: () => {
+            let action = {
+                type : RESTART,
             }
             dispatch(action)
         }
