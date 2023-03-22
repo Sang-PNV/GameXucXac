@@ -15,14 +15,14 @@ import './XucXac.css'
         </div>
         <div className='row text-center'>
             <div className='col-5'>
-                <button onClick={this.props.choiceTai} className='btnGame btnLeft'>Tài</button>
+                <button onClick={this.props.choiceTai} className='btnGame btn btnLeft'>Tài</button>
             </div>
             <div className='col-2'>
                 <XucXac/>
                 
             </div>
             <div className='col-5'>
-                <button onClick={this.props.choiceXiu} className='btnGame btnRight'>Xỉu</button>
+                <button onClick={this.props.choiceXiu} className='btnGame btn btnRight'>Xỉu</button>
             </div>
         </div>
         <div className='text-center'>
