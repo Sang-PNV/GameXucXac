@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'font-game';
+    src: url(./font/Pony.ttf);
+}
+.game{
+    background-image: url(../../public/GameImg/bgGame.png);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    font-family: 'font-game';
+}
+.title-game{
+    font-size: 70px;
+}
+.btnGame{
+    width: 150px;
+    height: 150px;
+    font-size: 50px;
+    border: none;
+    border: 5px solid rgb(2, 155, 2);
+    border-radius: 10px;
+}
+.btnGame:focus{
+    outline: none;
+}
+.btnLeft{
+    background-color: white;
+    color: black;
+    /* margin-left: 100px; */
+}
+.btnLeft:hover{
+    background-color: antiquewhite;
+}
+.btnRight:hover{
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.btnRight{
+    background-color: black;
+    color: white;
+    /* margin-right: 100px; */
+}
+.btnPlayGame{
+    font-size: 30px;
+    border-radius: 10px;
+}
+.resultGame{
+    /* margin-top: 25px; */
+}
