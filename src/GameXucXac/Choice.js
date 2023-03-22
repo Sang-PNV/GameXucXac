@@ -5,10 +5,10 @@ import { connect } from 'react-redux'
   render() {
     let {choice} = this.props
     return (
-      <div className='display-4'>
-         <p>Bạn chọn : <span className='text-danger'>{choice.banChon}</span></p>
-         <p>Tổng số bàn chơi : <span className='text-warning'>{choice.tongSoBanChoi}</span></p>
-         <p>Số bàn thắng : <span className='text-primary'>{choice.soBanThang}</span></p>
+      <div className=''>
+         <p className='ban_chon'>Bạn chọn : <span className='text-danger ban_chon'>{choice.banChon}</span></p>
+         <p className='ban_chon'>Tổng số bàn chơi : <span className='text-warning ban_chon'>{choice.tongSoBanChoi}</span></p>
+         <p className='ban_chon'>Số bàn thắng : <span className='text-primary ban_chon'>{choice.soBanThang}</span></p>
       </div>
       
     )

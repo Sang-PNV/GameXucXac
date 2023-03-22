@@ -4,13 +4,10 @@ import { connect } from 'react-redux'
  class XucXac extends Component {
     renderXucXac = () => {
       return  this.props.xucXac.xiNgau.map((item,index)=>{
-         return   <img key={index} className='mx-2' style={{width :"70px"}} src={item.url} alt="" />
+         return   <img key={index} className='mx-2 xuc_xac'  src={item.url} alt="" />
         })
       }
-      render() {
-         let {xiNgau} = this.props.xucXac
-
-      
+      render() {      
     return (
       <div >
         {/* <img className='mx-2' style={{width :"70px"}} src={xiNgau.url1} alt="" />

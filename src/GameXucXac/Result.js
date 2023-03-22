@@ -6,7 +6,7 @@ import { connect } from 'react-redux'
     let {result} = this.props
     return (
       <div className='resultGame display-4 mt-4'>
-        <p>Kết Quả : <span className='text-danger'>{result.result}</span> nút <span className='text-warning'>{result.taiXiu}</span></p>
+        <p className='ban_chon'>Kết Quả : <span className='text-danger'>{result.result}</span> nút <span className='text-warning'>{result.taiXiu}</span></p>
       </div>
     )
   }
