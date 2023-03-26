@@ -6,9 +6,10 @@
     background-image: url(../../public/GameImg/bgGame.png);
     height: 100vh;
     /* background-attachment: fixed; */
-
-    width: 100%;
-    position: fixed;
+    background-size: cover;
+    background-position: bottom;
+    width: 100vw;
+    /* position: fixed; */
     font-family: 'font-game';
 }
 .title-game{
@@ -54,7 +55,34 @@
 .result{
     background-color: rgba(255, 255, 255, 0.37);
 }
-
+@media screen and (max-width: 1366px) {
+    .xuc_xac{
+        width: 50px;
+        padding: 0;
+    }
+    .btnGame{
+        width: 100px;
+        height: 100px;
+        font-size: 30px;
+    }
+    .ban_chon{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .xuc_xac{
+        width: 42px;
+        padding: 0;
+    }
+    .btnGame{
+        width: 100px;
+    height: 100px;
+    font-size: 30px;
+    }
+    .ban_chon{
+        font-size: 35px;
+    }
+}
 @media screen and (max-width: 768px) {
     .btnGame{
         width: 100px;
